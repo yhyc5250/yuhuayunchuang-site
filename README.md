@@ -2,12 +2,41 @@
 
 这是一个为宇华云创（河北雄安）供应链管理有限公司创建的静态企业官网。
 
+**最新版本：** 已添加公司 LOGO（页面左上角）
+
+---
+
 ## 推荐域名
 
 - **yuhuayunchuang.com** (全拼，易记)
 - **yhyc.com** (缩写，简短)
 - **yuhuayunchuang.cn** (国内域名)
 - **yhyc.cn** (缩写国内域名)
+
+## 🚀 快速部署
+
+### 自动化部署脚本（推荐）
+
+本项目包含自动化部署脚本 `deploy.ps1`，支持以下操作：
+
+**1. 本地预览**
+```powershell
+cd yuhuayunchuang-site
+.\deploy.ps1 -Action preview
+```
+然后在浏览器访问 http://localhost:8080
+
+**2. 提交更改**
+```powershell
+.\deploy.ps1 -Action commit
+```
+
+**3. 部署到 GitHub Pages**
+```powershell
+.\deploy.ps1 -Action github -Remote https://github.com/your-username/yuhuayunchuang-site.git
+```
+
+---
 
 ## 部署方式
 
