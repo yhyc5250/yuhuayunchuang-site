@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宇华云创（河北雄安）供应链管理有限公司</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo img {
+            height: 45px;
+            width: auto;
+            object-fit: contain;
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* About Section */
+        .section {
+            padding: 80px 0;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #667eea;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .about-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .about-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        /* Services Section */
+        .services {
+            background: #f8f9fa;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .contact-item {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .contact-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        footer p {
+            opacity: 0.8;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .nav-links {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="logo.jpg" alt="宇华云创 LOGO">
+                    <span class="logo-text">宇华云创</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#services">业务领域</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>宇华云创（河北雄安）供应链管理有限公司</h1>
+            <p>立足雄安，服务全球 — 专业的供应链管理与国际贸易解决方案提供商</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2>关于我们</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>🏢 公司概况</h3>
+                    <p>宇华云创（河北雄安）供应链管理有限公司成立于 2025 年 9 月 28 日，注册资本 200 万元，位于中国（河北）自由贸易试验区雄安片区。</p>
+                </div>
+                <div class="about-card">
+                    <h3>📍 地理位置</h3>
+                    <p>公司坐落于雄安新区综合保税区办公大楼 509-016，享有自贸区政策优势，交通便利，区位优势明显。</p>
+                </div>
+                <div class="about-card">
+                    <h3>🎯 企业使命</h3>
+                    <p>致力于为客户提供高效、可靠的供应链管理服务，助力中国企业走向世界，促进国际贸易合作。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2>业务领域</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>货物出口</h3>
+                    <p>提供专业的货物出口服务，包括报关、物流、仓储等一站式解决方案，确保货物安全、高效地送达全球各地。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>商务考察</h3>
+                    <p>邀请外国客户来华商务考察，提供签证协助、行程安排、商务对接等全方位服务，促进国际合作。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>供应链管理</h3>
+                    <p>优化供应链流程，降低运营成本，提高效率，为企业提供定制化的供应链管理解决方案。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>国际贸易咨询</h3>
+                    <p>提供国际贸易政策、市场分析、风险评估等专业咨询服务，助力企业拓展海外市场。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📍 公司地址</h3>
+                    <p>中国（河北）自由贸易试验区雄安片区<br>雄安综合保税区办公大楼 509-016</p>
+                </div>
+                <div class="contact-item">
+                    <h3>👤 法定代表人</h3>
+                    <p>李建生</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📧 商务合作</h3>
+                    <p>欢迎来电咨询<br>期待与您合作</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 宇华云创（河北雄安）供应链管理有限公司 版权所有</p>
+            <p>统一社会信用代码：91133100MAEXX6CK95</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
