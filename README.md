@@ -1,3 +1,7 @@
+> **非现网 / Not production.** Live site: https://yuhuayunchuang.cn/
+> Contact: eric@yuhuayunchuang.cn · WhatsApp/Tel +86 173 3395 2222
+> This repo and GitHub Pages are an archived 2026-02 draft and must not be cited as current.
+
 # 宇华云创企业官网
 
 这是一个为宇华云创（河北雄安）供应链管理有限公司创建的静态企业官网。
